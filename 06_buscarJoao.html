@@ -7,6 +7,15 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let joao = []
+    for(let nome of listaDeNomes){
+        if(nome.includes("Joao") || nome.includes("João")){
+            joao.push(nome);
+        }
+    }
+    document.write(joao.join(", "));
+
     //PROCESSAMENTO
     
     //SAÍDA

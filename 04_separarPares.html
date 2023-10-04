@@ -7,6 +7,16 @@
 
     //ENTRADA
 
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let pares = []
+    for ( let valor of listaDeItens){
+        if (valor%2 == 0){
+            pares.push(valor);
+        }
+    };
+    document.write(`Lista de numeros pares: ${pares.sort((a, b) => a-b).join(", ")}<br>
+    a lista a cima contem um total de ${pares.length} de numeros pares <br>
+    a lista original contem um total de ${listaDeItens.length} de itens`);
 
     //PROCESSAMENTO
 

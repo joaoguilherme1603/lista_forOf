@@ -7,6 +7,16 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    let pares = []
+    
+    for (let number of listaDeNumeros){
+        if(number % 2 == 0){
+            pares.push(number);
+            pares.sort((a, b) => a-b);
+        }
+    }
+    document.write(pares.join(", "));
 
     //PROCESSAMENTO
 

@@ -7,6 +7,20 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+  let Meninas = []
+  let Meninos = []
+  for(let genero of listaDeNomes){
+    let resposta=prompt(`"${genero}" Esse nome é F-feminio ou M-masculino?`).trim().toUpperCase();
+    if(resposta == "M"){
+        Meninos.push(genero)
+    }
+    else{
+        Meninas.push(genero)
+    }
+  }
+  document.write(`Lista de nomes masculinos: ${Meninos.join(`, `)} <br> Lista de nomes femininos: ${Meninas.join(`, `)}`)
+
     //PROCESSAMENTO
 
     //SAÍDA

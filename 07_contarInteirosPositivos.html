@@ -7,6 +7,17 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    let numerosC = []
+
+    for(let numero of listaDeNumeros){
+        if(numero > 0 && numero%1 == 0){
+            numerosC.push(numero)
+        }
+    }
+    document.write(`Lista dos numeros correspondentes as caracteristicas: ${numerosC} <br>
+    foram achados um total de ${numerosC.length} itens.`);
+
 
     //PROCESSAMENTO
 
